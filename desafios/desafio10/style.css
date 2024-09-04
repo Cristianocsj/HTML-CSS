@@ -1,0 +1,230 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jacquard+12+Charted&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #5eb47f;
+    --cor1: #24754a;
+    --cor2: #35A065;      /* Declarando variáveis em CSS*/
+    --cor3: #22CC6F;
+    --cor4: #4bf397;
+    --cor5: #8eb49e;
+
+    --fontePadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonteDestaque: 'Bebas Neue', cursive;
+    --fonteAndroid: 'Android', cursive;
+}
+/* Pseudo-classe :root representa raíz da árvore do documento */
+* {
+    /**Selecionando TODOS os elementos do documento HTML*/
+    margin: 0xp;
+    padding: 0px;
+
+}
+
+body {
+    background-color: rgb(107, 126, 102);
+    font-family: var(--fontePadrao);
+    margin: auto;
+}
+
+a.externo::after{
+    content: '\1F517';
+    /*Colocando o emoji do link, ::after foi utilizado pra colocar o emoji apos a escritura*/
+}
+
+p{
+    padding: 50px;
+    text-indent: 50px;
+    text-align: justify;
+    font-size: 10x;
+}
+
+strong{
+    color: #1b9652;
+    
+}
+
+header{
+    background-image: linear-gradient(to bottom, #1b812ac9, #0e2418be);/*Colocando degradê com essas duas cores de cima pra baixo(to bottom)*/
+    min-height: 150px;
+    text-align: center;
+}
+header h1 {
+    color: rgb(216, 250, 235);
+    font-family: var(--fonteDestaque);
+    font-weight: normal;
+    padding-top: 40px;
+    font-size: 5em;
+    margin: auto;
+    text-shadow: 4px 4px rgba(0, 253, 101, 0.297); /*Colocando sombra nas palavras(no caso, o h1)*/
+}
+header p{
+    color: white;
+    font-family: var(--fontePadrao);
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-indent: 0px;
+    text-align: center;
+}
+
+nav{
+    background-color: #27533b;
+    padding: 10px;
+    box-shadow: 0px 7px 7px black;
+    margin: auto;
+}
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;/*Quando mexer o mouse por cima dos links, irá demorar 0.5 segundos para fazer a transição*/
+}
+nav > a:hover{
+    background-color: #37aa6b;
+    color: black;
+    font-weight: bold;
+}
+
+article{
+    margin-bottom: 30px;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.543);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h1 {
+    color: #1d5738;
+    font-family: var(--fonteAndroid);
+    padding: 20px;
+    margin: auto;
+    font-weight: normal;
+    font-size: 2em;
+}
+main h2 {
+    background-image: linear-gradient(to right, #2c8a3a89, #ffffff97);
+    color: var(--cor1);
+    font-family: var(--fonteAndroid);
+    background-image: linear-gradient(to rigth);
+    padding-left: 20px;
+    margin-left: 16px;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+main img{
+    width: 100%;
+
+}
+
+main img.pequena{
+    max-width: 250px;
+    display: block;
+    margin: auto;
+}
+
+main p{
+    margin: auto;
+    padding: 15px;
+    line-height: 1.5em;
+}
+
+main a{
+    text-decoration: none;
+    background-color: #47ca82;
+    color: black;
+    font-weight: bold;
+    padding: 3px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+aside{
+    background-color: #7bd5a185;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.441);
+}
+aside > h3{
+    background-color: #22CC6F;
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+}
+aside > ul{
+    list-style-position: inside;
+    /*colocando as bolinhas da lista pra dentro do aside*/
+    columns: 2;
+    /*dividindo a lista em 2 colunas*/
+    list-style-type: '\2714\00A0\00A0';
+    /*Mudando o tipo da listagem com o emoji e dando um espaçamento entre as listas com 00A0*/
+    text-align: justify;
+    margin-left:100px;
+}
+
+.video{
+    background-color: #2b6847;
+    padding: 20px;
+    padding-bottom: 54%;
+    margin: auto;
+
+    position: relative;
+}
+
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#irina{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer{
+    background-color: #223e2f;
+    color: white;
+    margin: auto;
+    padding: 20px;
+}
+
+footer > p{
+    font-weight: bolder;
+}
+
+.texto{
+    text-align: center;
+    margin: auto;
+    font-size: small;
+    padding: 0px;
+    margin: auto;
+}
+.num{
+    text-align: left;
+    padding: 0px;
+    font-size: small;
+    margin: auto;
+    text-indent: 0px;
+}

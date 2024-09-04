@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedaddos localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video  width="500" controls autoplay loop> <!--width = largura na tela, controls = controles do vídeo na parte inferior da mídia, autoplay = começa tocando o vídeo automaticamente, loop = vai repetir o vídeo toda vez quando acabar, poster = thumbnail do vídeo-->
+        <source src="midias/Meu-Video.mp4.Mp4" type="video/mp4">
+        <source src="midias/Meu-Video.mkv.mkv" type="video/mkv">
+        <source src="midias/Meu-Video.webm.webm" type="videos/webm"> <!--para carreagr os vídeos-->
+        <p>Infelizmente seu navegador não conseguiu carregar os vídeos</p>
+    </video>
+    
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/1StI9KiK34I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--Linha de código que foi resgatado através do passo a passo: Youtuve-Compartilhar-Incorporar-Copiar-->
+</body>
+</html>
